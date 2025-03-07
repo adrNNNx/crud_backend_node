@@ -1,6 +1,6 @@
 const jsonwebtoken = require("jsonwebtoken");
 const dotenv = require("dotenv");
-const { usuarios_db } = require("../CRUD/crudbd");
+const {usuarios_db} = require("../login_register/login_register");
 
 dotenv.config();
 

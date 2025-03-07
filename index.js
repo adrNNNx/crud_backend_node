@@ -38,7 +38,9 @@ app.post("/api/register", cookies.Cookies, methods.register);
 app.post("/api/login", methods.login);
 
 app.post("/api/regis_prov", crudbd.regis_prov);
+app.post("/api/update_prov", crudbd.update_prov);
+app.post("/api/delete_prov", crudbd.delete_prov);
 
 
 //Apis-get
-app.get("/api/get_prov", crudbd.get_proveedores );
+app.get("/api/get_prov/:id?", crudbd.get_proveedores );
